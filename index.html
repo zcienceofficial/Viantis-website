@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viantis Lifesciences | Premium Wellness & Healthcare</title>
+  <meta name="description" content="Viantis Lifesciences provides premium, scientifically backed wellness formulations with a commitment to quality, transparency, and trust." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
+          },
+          colors: {
+            navy: '#0F2747',
+            teal: '#0F766E',
+            soft: '#F8FAFC',
+            charcoal: '#334155',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans text-charcoal bg-white antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#" class="flex items-center gap-3">
+          <div class="h-11 w-11 rounded-xl bg-navy flex items-center justify-center text-white font-bold text-xl">
+            V
+          </div>
+          <div>
+            <p class="text-lg font-bold text-navy leading-tight">Viantis Lifesciences</p>
+            <p class="text-xs tracking-wide text-slate-500 uppercase">Premium Wellness</p>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#home" class="text-slate-700 hover:text-teal">Home</a>
+          <a href="#about" class="text-slate-700 hover:text-teal">About Us</a>
+          <a href="#products" class="text-slate-700 hover:text-teal">Our Products</a>
+          <a href="#partner" class="text-slate-700 hover:text-teal">Partner</a>
+          <a href="#contact" class="text-slate-700 hover:text-teal">Contact</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-200 text-navy">
+          ☰
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden pb-6">
+        <nav class="grid gap-4 text-sm font-medium">
+          <a href="#home" class="text-slate-700">Home</a>
+          <a href="#about" class="text-slate-700">About Us</a>
+          <a href="#products" class="text-slate-700">Our Products</a>
+          <a href="#partner" class="text-slate-700">Partner</a>
+          <a href="#contact" class="text-slate-700">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&w=1800&q=80"
+        alt="Clinical healthcare background"
+        class="h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-navy/75"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-28 lg:py-36">
+      <div class="max-w-3xl">
+        <p class="mb-5 inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-teal-100 ring-1 ring-white/20">
+          Science-backed wellness formulations
+        </p>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Pioneering Wellness. Delivering Quality Healthcare.
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-slate-200 leading-8">
+          Committed to providing scientifically backed, high-standard formulations for everyday well-being.
+        </p>
+        <a href="#products" class="mt-10 inline-flex items-center justify-center rounded-full bg-teal px-8 py-4 text-white font-semibold shadow-lg hover:bg-teal-700 transition">
+          Explore Our Products
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commitment -->
+  <section class="bg-soft py-20">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+      <p class="text-2xl md:text-3xl font-semibold text-navy leading-relaxed">
+        “At Viantis Lifesciences, quality is not an act, it is our habit.
+        We bridge the gap between rigorous scientific standards and daily health needs,
+        ensuring safety and efficacy in every batch.”
+      </p>
+    </div>
+  </section>
+
+  <!-- Quality Pillars -->
+  <section id="products" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-sm font-bold tracking-widest uppercase text-teal">Core Quality Pillars</p>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy">
+          Built for trust, transparency, and clinical confidence.
+        </h2>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-8">
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <div class="h-12 w-12 rounded-2xl bg-teal/10 flex items-center justify-center text-teal text-2xl">✓</div>
+          <h3 class="mt-6 text-xl font-bold text-navy">Uncompromising Quality</h3>
+          <p class="mt-4 leading-7 text-slate-600">
+            Manufactured through certified facilities with strict adherence to GMP-aligned quality systems.
+          </p>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <div class="h-12 w-12 rounded-2xl bg-teal/10 flex items-center justify-center text-teal text-2xl">✦</div>
+          <h3 class="mt-6 text-xl font-bold text-navy">Purity & Efficacy</h3>
+          <p class="mt-4 leading-7 text-slate-600">
+            Formulated with strictly sourced, active, premium-grade ingredients for dependable wellness support.
+          </p>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+          <div class="h-12 w-12 rounded-2xl bg-teal/10 flex items-center justify-center text-teal text-2xl">⚖</div>
+          <h3 class="mt-6 text-xl font-bold text-navy">Regulatory Compliance</h3>
+          <p class="mt-4 leading-7 text-slate-600">
+            Guided by strict adherence to applicable food, drug, quality, and safety authority standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-soft">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=80"
+          alt="Modern healthcare manufacturing"
+          class="rounded-3xl shadow-xl w-full object-cover"
+        />
+      </div>
+
+      <div>
+        <p class="text-sm font-bold tracking-widest uppercase text-teal">About Us</p>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy">Healthcare built on integrity.</h2>
+
+        <div class="mt-8 space-y-8">
+          <div>
+            <h3 class="text-xl font-bold text-navy">Our Mission</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              To empower individuals to lead healthier lives by delivering accessible, premium-grade health and wellness solutions built on a foundation of trust and integrity.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-navy">Our Vision</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              To become a trusted household name in healthcare, recognized for our uncompromising dedication to purity, scientific transparency, and innovative formulations.
+            </p>
+          </div>
+
+          <div class="rounded-3xl bg-white p-8 border border-slate-200">
+            <h3 class="text-xl font-bold text-navy">From Formulation to Shelf.</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              We understand that healthcare requires absolute precision. Our products are manufactured in state-of-the-art facilities that adhere to strict Good Manufacturing Practices (GMP). Every batch undergoes rigorous quality testing to ensure that what goes on the label is exactly what goes into the body.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner -->
+  <section id="partner" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+      <p class="text-sm font-bold tracking-widest uppercase text-teal">Partner With Us</p>
+      <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy">Let’s grow quality healthcare together.</h2>
+      <p class="mt-6 text-lg leading-8 text-slate-600">
+        We are actively expanding our footprint. If you are a distributor, retailer, or healthcare professional looking to partner with a quality-driven brand, we would love to collaborate.
+      </p>
+      <a href="#contact" class="mt-10 inline-flex rounded-full bg-navy px-8 py-4 text-white font-semibold hover:bg-slate-800 transition">
+        Contact Our Team
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-soft">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-sm font-bold tracking-widest uppercase text-teal">Contact Us</p>
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy">Official company information.</h2>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-8">
+        <div class="rounded-3xl bg-white p-8 border border-slate-200">
+          <h3 class="font-bold text-navy text-lg">Registered Office</h3>
+          <p class="mt-4 leading-7 text-slate-600">
+            Ground floor, plot no 77, Sector 17A, Vashi, Navi Mumbai, Maharashtra, India - 400705
+          </p>
+        </div>
+
+        <div class="rounded-3xl bg-white p-8 border border-slate-200">
+          <h3 class="font-bold text-navy text-lg">Contact Number</h3>
+          <p class="mt-4 text-slate-600">
+            <a href="tel:+919694611430" class="hover:text-teal">+91 9694611430</a>
+          </p>
+        </div>
+
+        <div class="rounded-3xl bg-white p-8 border border-slate-200">
+          <h3 class="font-bold text-navy text-lg">Customer Care Email</h3>
+          <p class="mt-4 text-slate-600 break-all">
+            <a href="mailto:viantislifesciences@gmail.com" class="hover:text-teal">
+              viantislifesciences@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-14">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <h3 class="text-xl font-bold">Viantis Lifesciences</h3>
+          <p class="mt-4 text-slate-300 leading-7">
+            Premium wellness solutions with a focus on quality, transparency, and scientific integrity.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold">Quick Links</h4>
+          <div class="mt-4 grid gap-3 text-slate-300">
+            <a href="#home" class="hover:text-white">Home</a>
+            <a href="#about" class="hover:text-white">About Us</a>
+            <a href="#products" class="hover:text-white">Our Products</a>
+            <a href="#partner" class="hover:text-white">Partner</a>
+            <a href="#contact" class="hover:text-white">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-semibold">Corporate Office</h4>
+          <p class="mt-4 text-slate-300 leading-7">
+            Vashi, Navi Mumbai, Maharashtra, India
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-white/10 pt-8 text-sm text-slate-300">
+        © 2026 Viantis Lifesciences Pharmaceuticals. All Rights Reserved.
+      </div>
+    </div>
+
+    <div class="bg-slate-950 px-6 py-5 text-center text-sm leading-6 text-slate-300">
+      Disclaimer: These products are not intended to diagnose, treat, cure, or prevent any disease. Please consult a healthcare professional before starting any new dietary regimen.
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
