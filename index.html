@@ -1,307 +1,240 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viantis Lifesciences | Premium Wellness & Healthcare</title>
-  <meta name="description" content="Viantis Lifesciences provides premium, scientifically backed wellness formulations with a commitment to quality, transparency, and trust." />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
-          },
-          colors: {
-            navy: '#0F2747',
-            teal: '#0F766E',
-            soft: '#F8FAFC',
-            charcoal: '#334155',
-          }
-        }
-      }        
-    }
-  </script>
-  <meta name="google-site-verification"
-content="XXXXXXXXXXXXXXXXXXXXXXXX">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#0F2747">
+<meta name="theme-color" content="#0d2b52">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+<title>Viantis Lifesciences | Science-Led Nutraceutical & Wellness Products</title>
+<meta name="description" content="Viantis Lifesciences develops science-led nutraceutical and wellness products with a focus on thoughtful formulation, quality and transparent communication.">
+<link rel="canonical" href="https://www.viantislifesciences.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Viantis Lifesciences">
+<meta property="og:description" content="Science-led nutraceutical and wellness solutions.">
+<meta property="og:url" content="https://www.viantislifesciences.com/">
+<meta property="og:image" content="https://www.viantislifesciences.com/assets/images/viacal-hero.png">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Viantis Lifesciences Private Limited",
+  "url":"https://www.viantislifesciences.com/",
+  "logo":"https://www.viantislifesciences.com/android-chrome-512x512.png",
+  "email":"viantislifesciences@gmail.com",
+  "telephone":"+91-9694611430",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Ground Floor, Plot No. 77, Sector 17A",
+    "addressLocality":"Vashi, Navi Mumbai",
+    "addressRegion":"Maharashtra",
+    "postalCode":"400705",
+    "addressCountry":"IN"
+  }
+}
+</script>
 </head>
+<body>
 
-<body class="font-sans text-charcoal bg-white antialiased">
+<header class="header">
+  <div class="container navbar">
+    <a class="brand" href="/index.html">
+      <img src="/android-chrome-192x192.png" alt="Viantis Lifesciences logo">
+      <span>Viantis Lifesciences<small>Science-led wellness</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="/index.html">Home</a>
+      <a href="/index.html#about">About</a>
+      <a href="/index.html#products">Products</a>
+      <a href="/index.html#quality">Quality</a>
+      <a href="/index.html#partner">Partner</a>
+      <a href="/index.html#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" type="button" data-menu-button aria-expanded="false">Menu</button>
+  </div>
+  <div class="container mobile-menu" data-mobile-menu>
+    <a href="/index.html">Home</a>
+    <a href="/index.html#about">About</a>
+    <a href="/index.html#products">Products</a>
+    <a href="/index.html#quality">Quality</a>
+    <a href="/index.html#partner">Partner</a>
+    <a href="/index.html#contact">Contact</a>
+  </div>
+</header>
 
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <a href="#" class="flex items-center gap-3">
-          <div class="h-11 w-11 rounded-xl bg-navy flex items-center justify-center text-white font-bold text-xl">
-            V
-          </div>
-          <div>
-            <p class="text-lg font-bold text-navy leading-tight">Viantis Lifesciences</p>
-            <p class="text-xs tracking-wide text-slate-500 uppercase">Premium Wellness</p>
-          </div>
-        </a>
-
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="#home" class="text-slate-700 hover:text-teal">Home</a>
-          <a href="#about" class="text-slate-700 hover:text-teal">About Us</a>
-          <a href="#products" class="text-slate-700 hover:text-teal">Our Products</a>
-          <a href="#partner" class="text-slate-700 hover:text-teal">Partner</a>
-          <a href="#contact" class="text-slate-700 hover:text-teal">Contact</a>
-        </nav>
-
-        <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-200 text-navy">
-          ☰
-        </button>
-      </div>
-
-      <div id="mobileMenu" class="hidden md:hidden pb-6">
-        <nav class="grid gap-4 text-sm font-medium">
-          <a href="#home" class="text-slate-700">Home</a>
-          <a href="#about" class="text-slate-700">About Us</a>
-          <a href="#products" class="text-slate-700">Our Products</a>
-          <a href="#partner" class="text-slate-700">Partner</a>
-          <a href="#contact" class="text-slate-700">Contact</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section id="home" class="relative overflow-hidden">
-    <div class="absolute inset-0">
-      <img
-        src="https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&w=1800&q=80"
-        alt="Clinical healthcare background"
-        class="h-full w-full object-cover"
-      />
-      <div class="absolute inset-0 bg-navy/75"></div>
-    </div>
-
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-28 lg:py-36">
-      <div class="max-w-3xl">
-        <p class="mb-5 inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-teal-100 ring-1 ring-white/20">
-          Science-backed wellness formulations
-        </p>
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
-          Pioneering Wellness. Delivering Quality Healthcare.
-        </h1>
-        <p class="mt-6 text-lg md:text-xl text-slate-200 leading-8">
-          Committed to providing scientifically backed, high-standard formulations for everyday well-being.
-        </p>
-        <a href="#products" class="mt-10 inline-flex items-center justify-center rounded-full bg-teal px-8 py-4 text-white font-semibold shadow-lg hover:bg-teal-700 transition">
-          Explore Our Products
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Commitment -->
-  <section class="bg-soft py-20">
-    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
-      <p class="text-2xl md:text-3xl font-semibold text-navy leading-relaxed">
-        “At Viantis Lifesciences, quality is not an act, it is our habit.
-        We bridge the gap between rigorous scientific standards and daily health needs,
-        ensuring safety and efficacy in every batch.”
-      </p>
-    </div>
-  </section>
-
-  <!-- Quality Pillars -->
-  <section id="products" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <p class="text-sm font-bold tracking-widest uppercase text-teal">Core Quality Pillars</p>
-        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy">
-          Built for trust, transparency, and clinical confidence.
-        </h2>
-      </div>
-
-      <div class="mt-14 grid md:grid-cols-3 gap-8">
-        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <div class="h-12 w-12 rounded-2xl bg-teal/10 flex items-center justify-center text-teal text-2xl">✓</div>
-          <h3 class="mt-6 text-xl font-bold text-navy">Uncompromising Quality</h3>
-          <p class="mt-4 leading-7 text-slate-600">
-            Manufactured through certified facilities with strict adherence to GMP-aligned quality systems.
-          </p>
-        </div>
-
-        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <div class="h-12 w-12 rounded-2xl bg-teal/10 flex items-center justify-center text-teal text-2xl">✦</div>
-          <h3 class="mt-6 text-xl font-bold text-navy">Purity & Efficacy</h3>
-          <p class="mt-4 leading-7 text-slate-600">
-            Formulated with strictly sourced, active, premium-grade ingredients for dependable wellness support.
-          </p>
-        </div>
-
-        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-          <div class="h-12 w-12 rounded-2xl bg-teal/10 flex items-center justify-center text-teal text-2xl">⚖</div>
-          <h3 class="mt-6 text-xl font-bold text-navy">Regulatory Compliance</h3>
-          <p class="mt-4 leading-7 text-slate-600">
-            Guided by strict adherence to applicable food, drug, quality, and safety authority standards.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-24 bg-soft">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
       <div>
-        <img
-          src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=80"
-          alt="Modern healthcare manufacturing"
-          class="rounded-3xl shadow-xl w-full object-cover"
-        />
+        <span class="badge">Science-led nutraceutical wellness</span>
+        <h1>Building healthier lives through <span>thoughtful formulations.</span></h1>
+        <p>Viantis Lifesciences creates responsible, quality-focused nutraceutical products designed around real wellness needs and transparent product communication.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#products">Explore products</a>
+          <a class="btn btn-outline" href="#partner">Partner with us</a>
+        </div>
       </div>
+      <div class="hero-card">
+        <img src="/assets/images/viacal-hero.png" alt="Via-Cal advanced calcium product by Viantis Lifesciences">
+      </div>
+    </div>
+  </section>
 
+  <div class="container stat-strip">
+    <div class="stats">
+      <div class="stat"><strong>Science-led</strong><span>Purposeful formulation approach</span></div>
+      <div class="stat"><strong>Quality focused</strong><span>Responsible manufacturing partners</span></div>
+      <div class="stat"><strong>Transparent</strong><span>Clear product communication</span></div>
+      <div class="stat"><strong>Partner ready</strong><span>Healthcare and distribution enquiries</span></div>
+    </div>
+  </div>
+
+  <section id="about" class="section">
+    <div class="container about-grid">
       <div>
-        <p class="text-sm font-bold tracking-widest uppercase text-teal">About Us</p>
-        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy">Healthcare built on integrity.</h2>
+        <div class="eyebrow">About Viantis</div>
+        <h2 class="section-title">A modern wellness company built on clarity and care.</h2>
+        <p>Viantis Lifesciences Private Limited is focused on developing nutraceutical and wellness products that combine practical health needs with a responsible, science-led approach.</p>
+        <ul class="checks">
+          <li>Thoughtful selection of ingredients and dosage forms</li>
+          <li>Quality-focused third-party manufacturing partnerships</li>
+          <li>Responsible product positioning and transparent communication</li>
+          <li>Built for healthcare, retail and direct consumer channels</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Our philosophy</div>
+        <h3 style="font-size:2rem">Formulate with purpose. Communicate with integrity.</h3>
+        <p>Our aim is not merely to add products to the market, but to create focused solutions with clear positioning, practical benefits and long-term brand trust.</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="mt-8 space-y-8">
-          <div>
-            <h3 class="text-xl font-bold text-navy">Our Mission</h3>
-            <p class="mt-3 leading-7 text-slate-600">
-              To empower individuals to lead healthier lives by delivering accessible, premium-grade health and wellness solutions built on a foundation of trust and integrity.
-            </p>
+  <section id="products" class="section section-soft">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow">Our products</div>
+        <h2 class="section-title">Focused products for everyday wellness.</h2>
+        <p class="section-intro">Our portfolio begins with Via-Cal, an advanced calcium and bone wellness formulation.</p>
+      </div>
+      <div class="product-card product-grid" style="margin-top:46px">
+        <div class="product-copy">
+          <div class="eyebrow">Advanced calcium & bone wellness</div>
+          <h3>Via-<span>Cal</span></h3>
+          <p style="font-size:1.2rem;font-weight:800;color:var(--navy)">Advanced Calcium. Complete Support.</p>
+          <p>Contains Calcium Citrate, Vitamin D3, Magnesium, Zinc, Vitamin K2-7 and Vitamin B12.</p>
+          <div class="pills">
+            <span class="pill">Calcium Citrate</span>
+            <span class="pill">Vitamin D3</span>
+            <span class="pill">Magnesium</span>
+            <span class="pill">Zinc</span>
+            <span class="pill">Vitamin K2-7</span>
+            <span class="pill">Vitamin B12</span>
           </div>
-
-          <div>
-            <h3 class="text-xl font-bold text-navy">Our Vision</h3>
-            <p class="mt-3 leading-7 text-slate-600">
-              To become a trusted household name in healthcare, recognized for our uncompromising dedication to purity, scientific transparency, and innovative formulations.
-            </p>
-          </div>
-
-          <div class="rounded-3xl bg-white p-8 border border-slate-200">
-            <h3 class="text-xl font-bold text-navy">From Formulation to Shelf.</h3>
-            <p class="mt-3 leading-7 text-slate-600">
-              We understand that healthcare requires absolute precision. Our products are manufactured in state-of-the-art facilities that adhere to strict Good Manufacturing Practices (GMP). Every batch undergoes rigorous quality testing to ensure that what goes on the label is exactly what goes into the body.
-            </p>
-          </div>
+          <a class="btn btn-primary" href="/viacal.html">Explore Via-Cal</a>
+        </div>
+        <div class="product-image">
+          <img src="/assets/images/viacal-hero.png" alt="Via-Cal product creative">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Partner -->
-  <section id="partner" class="py-24 bg-white">
-    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
-      <p class="text-sm font-bold tracking-widest uppercase text-teal">Partner With Us</p>
-      <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy">Let’s grow quality healthcare together.</h2>
-      <p class="mt-6 text-lg leading-8 text-slate-600">
-        We are actively expanding our footprint. If you are a distributor, retailer, or healthcare professional looking to partner with a quality-driven brand, we would love to collaborate.
-      </p>
-      <a href="#contact" class="mt-10 inline-flex rounded-full bg-navy px-8 py-4 text-white font-semibold hover:bg-slate-800 transition">
-        Contact Our Team
-      </a>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-24 bg-soft">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <p class="text-sm font-bold tracking-widest uppercase text-teal">Contact Us</p>
-        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy">Official company information.</h2>
+  <section id="quality" class="section">
+    <div class="container">
+      <div class="center">
+        <div class="eyebrow">Our approach</div>
+        <h2 class="section-title">Quality, compliance and responsible communication.</h2>
       </div>
-
-      <div class="mt-12 grid md:grid-cols-3 gap-8">
-        <div class="rounded-3xl bg-white p-8 border border-slate-200">
-          <h3 class="font-bold text-navy text-lg">Registered Office</h3>
-          <p class="mt-4 leading-7 text-slate-600">
-            Ground floor, plot no 77, Sector 17A, Vashi, Navi Mumbai, Maharashtra, India - 400705
-          </p>
-        </div>
-
-        <div class="rounded-3xl bg-white p-8 border border-slate-200">
-          <h3 class="font-bold text-navy text-lg">Contact Number</h3>
-          <p class="mt-4 text-slate-600">
-            <a href="tel:+919694611430" class="hover:text-teal">+91 9694611430</a>
-          </p>
-        </div>
-
-        <div class="rounded-3xl bg-white p-8 border border-slate-200">
-          <h3 class="font-bold text-navy text-lg">Customer Care Email</h3>
-          <p class="mt-4 text-slate-600 break-all">
-            <a href="mailto:viantislifesciences@gmail.com" class="hover:text-teal">
-              viantislifesciences@gmail.com
-            </a>
-          </p>
-        </div>
+      <div class="grid-3" style="margin-top:42px">
+        <article class="card"><div class="icon-box">01</div><h3>Ingredient intent</h3><p>Each formulation is built around a defined wellness need rather than unnecessary ingredient overload.</p></article>
+        <article class="card"><div class="icon-box">02</div><h3>Manufacturing quality</h3><p>We work with qualified third-party manufacturing partners and focus on documented quality processes.</p></article>
+        <article class="card"><div class="icon-box">03</div><h3>Clear communication</h3><p>Claims and product information should always align with the approved label and applicable regulations.</p></article>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-navy text-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-14">
-      <div class="grid md:grid-cols-3 gap-10">
+  <section id="partner" class="section section-soft">
+    <div class="container">
+      <div class="cta">
         <div>
-          <h3 class="text-xl font-bold">Viantis Lifesciences</h3>
-          <p class="mt-4 text-slate-300 leading-7">
-            Premium wellness solutions with a focus on quality, transparency, and scientific integrity.
-          </p>
+          <div class="eyebrow" style="color:#8ce2eb">Partner with Viantis</div>
+          <h2>Let us build meaningful wellness partnerships.</h2>
+          <p>We welcome enquiries from healthcare professionals, distributors, retailers and strategic partners.</p>
         </div>
-
-        <div>
-          <h4 class="font-semibold">Quick Links</h4>
-          <div class="mt-4 grid gap-3 text-slate-300">
-            <a href="#home" class="hover:text-white">Home</a>
-            <a href="#about" class="hover:text-white">About Us</a>
-            <a href="#products" class="hover:text-white">Our Products</a>
-            <a href="#partner" class="hover:text-white">Partner</a>
-            <a href="#contact" class="hover:text-white">Contact</a>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="font-semibold">Corporate Office</h4>
-          <p class="mt-4 text-slate-300 leading-7">
-            Vashi, Navi Mumbai, Maharashtra, India
-          </p>
-        </div>
-      </div>
-
-      <div class="mt-12 border-t border-white/10 pt-8 text-sm text-slate-300">
-        © 2026 Viantis Lifesciences Pharmaceuticals. All Rights Reserved.
+        <a class="btn btn-light" href="#contact">Start a conversation</a>
       </div>
     </div>
+  </section>
 
-    <div class="bg-slate-950 px-6 py-5 text-center text-sm leading-6 text-slate-300">
-      Disclaimer: These products are not intended to diagnose, treat, cure, or prevent any disease. Please consult a healthcare professional before starting any new dietary regimen.
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <div class="eyebrow">Contact us</div>
+        <h2 class="section-title">Tell us how we can help.</h2>
+        <p>For product, distribution, retail, healthcare or collaboration enquiries, contact our team.</p>
+        <ul class="checks">
+          <li><a href="mailto:viantislifesciences@gmail.com">viantislifesciences@gmail.com</a></li>
+          <li><a href="tel:+919694611430">+91 96946 11430</a></li>
+          <li>Vashi, Navi Mumbai, Maharashtra, India</li>
+        </ul>
+      </div>
+      <div class="card">
+        <form class="form" action="mailto:viantislifesciences@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email address" required>
+          <select name="enquiry">
+            <option>Product enquiry</option>
+            <option>Distributor enquiry</option>
+            <option>Retail enquiry</option>
+            <option>Healthcare professional enquiry</option>
+            <option>Other</option>
+          </select>
+          <textarea name="message" placeholder="How can we help?" required></textarea>
+          <button class="btn btn-primary" type="submit">Send enquiry</button>
+        </form>
+      </div>
     </div>
-  </footer>
+  </section>
+</main>
 
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Viantis Lifesciences Private Limited</h4>
+      <p>Science-led nutraceutical and wellness solutions designed with a focus on quality, transparency and responsible communication.</p>
+      <p>Ground Floor, Plot No. 77, Sector 17A, Vashi, Navi Mumbai, Maharashtra, India – 400705</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="/index.html#about">About us</a>
+      <a href="/index.html#products">Products</a>
+      <a href="/viacal.html">Via-Cal</a>
+      <a href="/index.html#partner">Partner with us</a>
+    </div>
+    <div>
+      <h4>Information</h4>
+      <a href="/privacy.html">Privacy policy</a>
+      <a href="/terms.html">Terms of use</a>
+      <a href="mailto:viantislifesciences@gmail.com">Email us</a>
+      <a href="tel:+919694611430">Call us</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">© 2026 Viantis Lifesciences Private Limited. All rights reserved.</div>
+  <div class="disclaimer">
+    <div class="container">Nutraceutical disclaimer: Product information is for general awareness and must be read with the final approved pack label. Products are not intended to diagnose, treat, cure or prevent any disease. Consult a qualified healthcare professional when appropriate.</div>
+  </div>
+</footer>
 
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    document.querySelectorAll('#mobileMenu a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-      });
-    });
-  </script>
-
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
